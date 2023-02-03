@@ -7,19 +7,19 @@ variable "aws_region" {
 variable "nameprefix" {
   description = "Prefix to use for some resource names to avoid duplicates"
   type        = string
-  default     = "Cloud-Example"
+  default     = "Cloud-AWS-Apache-Terraform"
 }
 
 variable "name_tag" {
   description = "Value of the Name tag for the EC2 instance"
   type        = string
-  default     = "Cloud-Example-Terraform"
+  default     = "Cloud-AWS-Apache-Terraform"
 }
 
 variable "project_tag" {
   description = "Value of the Project tag for the EC2 instance"
   type        = string
-  default     = "Cloud-Example"
+  default     = "Cloud-AWS-Apache-Terraform"
 } 
 
 variable "availability_zone" {
@@ -32,7 +32,7 @@ variable "instance_type" {
   description = "EC2 Instance Type"
   type = string
   #default = "c5n.18xlarge"
-  default = "t3.medium"
+  default = "t2.micro"
 }
 
 variable "managed_policies" {
